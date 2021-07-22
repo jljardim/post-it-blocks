@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(226, 190, 141);
+}
+h2 {
+    font-size: 25px;
+}
+li {
+    background-color: #ffffff;
+}
+.codigo-produto {
+    color: green;
+    background-color: grey;
+    font-size: 25px;
+    margin: 8px;
+    border: 2px solid #000000;
+}
+.tamanho-produto {
+    font-size: 25px;
+    margin: 8px;
+}
+.preco-produto {
+    font-size: 25px;
+    margin: 8px;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 18px;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+img {
+    height: 200px;
+    width: 100px;
+}
+.input {
+    background-color: rgb(221, 219, 219);
+    width: 320px;
+    height: 25px;
+    position: absolute;
+    left: 120px;
+}
+fieldset {
+    background-color: honeydew;
+    width: 400px;
+    height:300px ;
+
+}
+#legenda {
+    font-size: 25px;
+}
+.rotulo {
+    font-size: 18px;
+}
+button {
+    background-color: rgb(221, 219, 219);
+    width: 180px;
+    height: 30px;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}

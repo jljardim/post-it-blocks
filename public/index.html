@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
+    <!-- <meta
       name="description"
       content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    /> -->
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Post-It-Blocks</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      <h1 id="titulo">Bem vindo ao mundo do post-it!!</h>
+    <main>
+      <ul class="produtos">
+        <li>
+          <h2>Post-it Azul</h2>
+          <img src="./img/postAzul.jpg">
+          <p class="codigo-produto">Código:000001</p>
+          <p class="preco-produto">Valor: R$ 3,00</p>
+          <p class="tamanho-produto">Tamanho: 100 x 100</p>
+        </li>
+        <li>
+          <h2>Post-it Rosa</h2>
+          <img src="./img/postRosa.jpg">
+          <p class="codigo-produto">Código:000002</p>
+          <p class="preco-produto">Valor: R$ 3,50</p>
+          <p class="tamanho-produto">Tamanho: 100 x 100</p>
+        </li>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      </ul>
+    </main>
+    <fieldset>
+        <legend id="legenda">Cadastro de reserva</legend>
+        <form id="formulario">
+            <label for="name" class="rotulo">Nome:</label>
+            <input type="text" id="name" class="input" placeholder="digite seu nome">
+            <br>
+            <label for="email" class="rotulo">Email:</label>
+            <input type="email" id="email" class="input" placeholder="@abcdef.com.br">
+            <br>
+            <label for="endereco" class="rotulo">Endereço:</label>
+            <input type="text" id="endereco" class="input" placeholder="ex: Rua:jose... Bairro: maria..... n°: 333">
+            <br>
+            <label for="telefone" class="rotulo">Telefone:</label>
+            <input type="text" id="telefone" class="input" placeholder="(00)00000-0000">
+            <br>
+            <label for="codigo" class="rotulo">Codigo:</label>
+            <input type="number" id="codigo" class="input" placeholder="digite o codigo do produto">
+            <br>
+            <button type="submit">Cadastrar</button>
+        </form>
+  </fieldset>
   </body>
 </html>
